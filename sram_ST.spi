@@ -1,0 +1,35 @@
+sram_ST
+
+.subckt sram_ST WL BL BL_b nVdd
+*****************************ST1***************************
+Mp_ST1 		nData	nData_b	nVdd	nVdd
+Mn_ST1_1 	nData	nData_b	nFB		gnd
+Mn_ST1_2 	nFB		nData_b	gnd		gnd
+*****************************ST1***************************
+*****************************ST2***************************
+Mp_ST2 		nData_b	nData	nVdd	nVdd
+Mn_ST2_1 	nData_b	nData	nFB_b	gnd
+Mn_ST2_2 	nFB_b	nData	gnd		gnd
+*****************************ST2***************************
+Mn_W_PG		nData	WWL		nTemp	gnd
+Mn_W_PG_b	nData_b	WWL		nTemp_b	gnd
+
+Mn_FB		nVdd	nData	nFB		gnd
+Mn_FB_b		nVdd	nData_b	nFB_b	gnd
+
+.ends
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
